@@ -1,6 +1,7 @@
 package org.besc;
 
 import java.awt.*;
+import java.util.Objects;
 
 public class CarInfo {
     // Структура, хранящая данные о проехавшей машине
@@ -11,9 +12,6 @@ public class CarInfo {
     public final float Speed;
 
     public CarInfo(String registrationNumber, Color color, String bodyType, float speed) {
-        if (registrationNumber == null || color == null || bodyType == null) {
-            throw new IllegalArgumentException("Field is null");
-        }
         if (speed <= 0) {
             throw new IllegalArgumentException("Speed less than or equal to 0");
         }
@@ -23,5 +21,16 @@ public class CarInfo {
         Speed = speed;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CarInfo info = (CarInfo) o;
+        return Float.compare(info.Speed, Speed) == 0 && Objects.equals(registrationNumber, info.registrationNumber) && Objects.equals(color, info.color) && Objects.equals(bodyType, info.bodyType);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(registrationNumber, color, bodyType, Speed);
+    }
 }
