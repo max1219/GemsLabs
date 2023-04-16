@@ -17,17 +17,36 @@ public class Main {
         new QuantityByBodyType(station);
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("1. Print records.\n2. Add sample cars info\n3. Add your car info\n4. Close\nPlease, enter number: ");
+            System.out.println("1. Print records");
+            System.out.println("2. Add sample cars info");
+            System.out.println("3. Add your car info");
+            System.out.println("4. Print average speed");
+            System.out.println("5. Print number who exceeded speed limit");
+            System.out.println("6. Print quantity by body type");
+            System.out.println("7. Close");
             int choice = scanner.nextInt();
-            if (choice == 1) {
-                printStationInfo(station);
-            } else if (choice == 2) {
-                addSampleCarsInfo(station);
-            } else if (choice == 3) {
-                System.out.println("Enter car info (*registration number* *color (hhhhhh)* *body type* *speed*)");
-                station.addCarInfo(readCarInfo(scanner));
-            } else if(choice == 4){
-                return;
+            switch (choice) {
+                case 1:
+                    printStationInfo(station);
+                    break;
+                case 2:
+                    addSampleCarsInfo(station);
+                    break;
+                case 3:
+                    System.out.println("Enter car info (*registration number* *color (hhhhhh)* *body type* *speed*)");
+                    station.addCarInfo(readCarInfo(scanner));
+                    break;
+                case 4:
+                    System.out.println(station.getRecord(AverageSpeed.recordName));
+                    break;
+                case 5:
+                    System.out.println(station.getRecord(NumberWhoExceededSpeedLimit.recordName));
+                    break;
+                case 6:
+                    System.out.println(station.getRecord(QuantityByBodyType.recordName));
+                    break;
+                case 7:
+                    return;
             }
         }
     }
