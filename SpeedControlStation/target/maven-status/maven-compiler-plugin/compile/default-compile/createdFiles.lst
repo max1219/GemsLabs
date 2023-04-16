@@ -1,3 +1,6 @@
-org\besc\CarInfo.class
-org\besc\DataProcessor.class
-org\besc\SpeedControlStation.class
+org\besc\speed\control\station\records\QuantityByBodyType.class
+org\besc\speed\control\station\CarInfo.class
+org\besc\speed\control\station\records\AverageSpeed.class
+org\besc\speed\control\station\SpeedControlStation.class
+org\besc\speed\control\station\records\NumberWhoExceededSpeedLimit.class
+org\besc\speed\control\station\records\Record.class

@@ -1,3 +1,6 @@
-C:\Users\besce\A\ProgrammingProjects\Java\SpeedControlStation\SpeedControlStation\src\main\java\org\besc\DataProcessor.java
-C:\Users\besce\A\ProgrammingProjects\Java\SpeedControlStation\SpeedControlStation\src\main\java\org\besc\CarInfo.java
-C:\Users\besce\A\ProgrammingProjects\Java\SpeedControlStation\SpeedControlStation\src\main\java\org\besc\SpeedControlStation.java
+C:\Users\besce\A\ProgrammingProjects\Java\SpeedControlStation\SpeedControlStation\src\main\java\org\besc\speed\control\station\CarInfo.java
+C:\Users\besce\A\ProgrammingProjects\Java\SpeedControlStation\SpeedControlStation\src\main\java\org\besc\speed\control\station\records\NumberWhoExceededSpeedLimit.java
+C:\Users\besce\A\ProgrammingProjects\Java\SpeedControlStation\SpeedControlStation\src\main\java\org\besc\speed\control\station\SpeedControlStation.java
+C:\Users\besce\A\ProgrammingProjects\Java\SpeedControlStation\SpeedControlStation\src\main\java\org\besc\speed\control\station\records\AverageSpeed.java
+C:\Users\besce\A\ProgrammingProjects\Java\SpeedControlStation\SpeedControlStation\src\main\java\org\besc\speed\control\station\records\QuantityByBodyType.java
+C:\Users\besce\A\ProgrammingProjects\Java\SpeedControlStation\SpeedControlStation\src\main\java\org\besc\speed\control\station\records\Record.java

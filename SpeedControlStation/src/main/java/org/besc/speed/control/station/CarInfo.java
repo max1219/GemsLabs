@@ -1,4 +1,4 @@
-package org.besc;
+package org.besc.speed.control.station;
 
 import java.awt.*;
 import java.util.Objects;
