@@ -1,7 +1,0 @@
-C:\Users\besce\A\ProgrammingProjects\Java\GemsLabs\Lab0\Lab0\bin\Debug\Lab0.exe
-C:\Users\besce\A\ProgrammingProjects\Java\GemsLabs\Lab0\Lab0\bin\Debug\Lab0.pdb
-C:\Users\besce\A\ProgrammingProjects\Java\GemsLabs\Lab0\Lab0\obj\Debug\Lab0.csproj.AssemblyReference.cache
-C:\Users\besce\A\ProgrammingProjects\Java\GemsLabs\Lab0\Lab0\obj\Debug\Lab0.csproj.SuggestedBindingRedirects.cache
-C:\Users\besce\A\ProgrammingProjects\Java\GemsLabs\Lab0\Lab0\obj\Debug\Lab0.csproj.CoreCompileInputs.cache
-C:\Users\besce\A\ProgrammingProjects\Java\GemsLabs\Lab0\Lab0\obj\Debug\Lab0.exe
-C:\Users\besce\A\ProgrammingProjects\Java\GemsLabs\Lab0\Lab0\obj\Debug\Lab0.pdb

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "XiIkXZErZGxBYW86qcn+7he12ze79bihFcptLa/xWkJOfwI6Q7zYntGXthfU5wNvbdkt2TGEwvCmHt2AFdgY/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\besce\\A\\ProgrammingProjects\\Java\\GemsLabs\\CSharpLabs\\CSharpLabs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\besce\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\besce\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\besce\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\besce\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.19\\microsoft.netcore.app.host.win-x64.6.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}
