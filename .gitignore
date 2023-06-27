@@ -1,3 +1,8 @@
+CSharpLabs/.idea/.idea.CSharpLabs/.idea/.gitignore
+
+*idea
+
+
 # Compiled class file
 *.class
 
