@@ -11,7 +11,7 @@ public static class TestRunner
     public static void TestClass(Type sourceType)
     {
         object instance = CreateInstance(sourceType);
-        
+
         MethodInfo[] methodInfos = sourceType.GetMethods();
         foreach (var method in methodInfos)
         {
@@ -21,23 +21,30 @@ public static class TestRunner
 
     private static void TestMethod(MethodInfo method, object testClassInstance)
     {
+        bool isPass = true;
+        bool isTest = false;
         foreach (var attribute in method.GetCustomAttributes())
         {
             if (attribute is AbcTesterAttribute testerAttribute)
             {
-                string methodName = $"{testClassInstance.GetType().Name}.{method.Name}";
+                isTest = true;
                 try
                 {
                     testerAttribute.TestMethod(method, testClassInstance);
-                    OnTestPass?.Invoke(methodName);
                 }
                 catch (TargetInvocationException e) when
                     (e.InnerException is AssertFailureException ex)
                 {
+                    isPass = false;
                     string message = ex.Message;
-                    OnTestFailure?.Invoke(methodName, message);
+                    OnTestFailure?.Invoke($"{testClassInstance.GetType().Name}.{method.Name}", message);
                 }
             }
+        }
+
+        if (isTest && isPass)
+        {
+            OnTestPass?.Invoke($"{testClassInstance.GetType().Name}.{method.Name}");
         }
     }
 
