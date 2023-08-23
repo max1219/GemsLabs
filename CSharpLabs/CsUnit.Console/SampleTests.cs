@@ -14,6 +14,30 @@ public class SampleTests
     }
 
     [Fact]
+    public void SuccessSameAndNotSame()
+    {
+        object a = new int();
+        object b = a;
+        Assert.Same(a, b);
+        Assert.NotSame(new int(), new int());
+    }
+    
+    [Fact]
+    public void FailSame()
+    {
+        object a = new int();
+        object b = new int();
+        Assert.Equals(a, b);
+        Assert.Same(a, b);
+    }
+
+    [Fact]
+    public void FailTest()
+    {
+        Assert.Fail();
+    }
+
+    [Fact]
     public void FailEqualsTest()
     {
         Assert.Equals(1, 2);
@@ -30,7 +54,6 @@ public class SampleTests
     {
         Assert.False(true);
     }
-
 
     [Fact]
     public void FailThrowsTest()

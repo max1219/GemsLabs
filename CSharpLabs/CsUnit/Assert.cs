@@ -39,4 +39,26 @@ public static class Assert
 
         throw new AssertFailureException($"Fail assert throws. Expected type: {typeof(T)}");
     }
+
+    public static void Same(object a, object b)
+    {
+        if (!ReferenceEquals(a, b))
+        {
+            throw new AssertFailureException($"Fail assert same");
+        }
+    }
+
+    public static void NotSame(object a, object b)
+    {
+        if (ReferenceEquals(a, b))
+        {
+            throw new AssertFailureException($"Fail assert not-same");
+        }
+    }
+
+    public static void Fail()
+    {
+        throw new AssertFailureException($"Fail assert fail");
+    }
+
 }
