@@ -26,17 +26,17 @@ public static class Assert
         }
     }
 
-    public static void Throws(Type exType, Func<object?> func)
+    public static void Throws<T>(Func<object?> func) where T : Exception
     {
         try
         {
             func.Invoke();
         }
-        catch (Exception e) when(e.GetType() == exType)
+        catch (T e)
         {
             return;
         }
 
-        throw new AssertFailureException($"Fail assert throws. Expected type: {exType}");
+        throw new AssertFailureException($"Fail assert throws. Expected type: {typeof(T)}");
     }
 }
